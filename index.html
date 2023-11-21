@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8"/>
+      <title>Halford's Fit Tracker</title>
+      <script src="script.js"></script>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+   </head>
+   <body>
+      <div class="nav-container">
+         <div id="site-title">Halford's Fit Tracker</div>
+      </div>
+      <div class="body-container">
+         <div id="page-title"> Current Fit Queue</div>
+         <div class="wrapper">
+            <div class="fit-details-container">
+               <div>
+                  <div id="make-title">🚗 Make</div>
+                  <input class="input" id="make-input-field" type="text" style="text-transform:uppercase">
+               </div>
+               <div>
+                  <div id="model-title">🚙 Model</div>
+                  <input class="input" id="model-input-field" type="text" style="text-transform:uppercase">
+               </div>
+               <div>
+                  <div id="red-title">#️⃣ Registration</div>
+                  <input class="input" id="registration-input-field" type="text" style="text-transform:uppercase">
+               </div>
+               <div>
+                  <div id="TOF-title">🛠️ Type of Fit</div>
+                  <form>  
+                     <select class="selection" id="fit-selection">  
+                         <option>-------Select a Type of Fit----------</option>  
+                         <option value="⚪ HeadLight">⚪ HeadLight</option>f
+                         <option value="🔴 Brake/Tail Light">🔴 Brake/Tail Light</option>
+                         <option value="🟢 SideLight">🟢 SideLight</option>
+                         <option value="🔵 Front Wiper Blades">🔵 Front Wiper Blades</option>  
+                         <option value="🟣 Rear Wiper Blade">🟣 Rear Wiper Blade</option>  
+                         <option value="🪫 Battery">🪫 Battery</option>
+                         <option value="🟡 High Beam">🟡 High Beam</option>
+                         <option value="🟠 Indicator">🟠 Indicator</option>
+                         <option value="❓ Other">❓ Other</option>
+                     </select>  
+                  </form> 
+               </div>
+               <div>
+                  <div id="paid-title">💵 Paid</div>
+                    <form>
+                        <select class="selection" id="paid-selection">
+                            <option value="❌ No">❌ No</option>
+                            <option value="✅ Yes">✅ Yes</option>
+                        </select>
+                    </form>
+               </div>
+               <div>
+                  <div id="carcheck-title">📋 Car Check</div>
+                   <form>
+                    <select class="selection" id="carcheck-selection">
+                        <option value="❌ No">❌ No</option>
+                        <option value="✅ Yes">✅ Yes</option>
+                    </select>
+                </form>
+               </div>
+         </div>
+         <div class="button-container">
+            <button id="create-button" type="button" onclick="getInputDetails()">Create new Fit</button>
+         </div>
+         </div>
+         <div>The fits added to the queue are specific to this current till and does not transfer to another till's browser.</div>
+         <div class="table-container">
+            <table id="customers" border="1">
+               <tr>
+                  <th>Make</th>
+                  <th>Model</th>
+                  <th>Registration</th>
+                  <th>Type of Fit</th>
+                  <th>Paid</th>
+                  <th>Car Check</th>
+                  <th>Edit</th>
+               </tr>
+            </table>
+         </div>
+      </div>
+      </div>
+      </div>
+   </body>
+</html>
