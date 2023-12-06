@@ -70,7 +70,7 @@ function getInputDetails() {
     save();
 
 
-    if (make == "" || model == "" || registration == "" || typeOfFit == "" || paid == "" || carCheck == "" || typeOfFit == "-------Select a Type of Fit----------") {
+    if (registration == "" || typeOfFit == "" || paid == "" || carCheck == "" || typeOfFit == "-------Select a Type of Fit----------") {
         alert("Make sure all input fields are filled in")
     } else {
 
