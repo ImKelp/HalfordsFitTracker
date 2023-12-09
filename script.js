@@ -117,8 +117,8 @@ function getInputDetails() {
 
 
 function clearInputFields() {
-    document.getElementById("make-input-field").value = "";
-    document.getElementById("model-input-field").value = "";
+    document.getElementById("make-input-field").value = "NOT NEEDED";
+    document.getElementById("model-input-field").value = "NOT NEEDED";
 
     document.getElementById("registration-input-field").value = "";
     document.getElementById("fit-selection").value = "-------Select a Type of Fit----------";
