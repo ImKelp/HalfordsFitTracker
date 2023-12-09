@@ -31,7 +31,7 @@ function  save() {
     var carCheck = document.getElementById('carcheck-selection').value;
 
     if (registration == "" || typeOfFit == "" || paid == "" || carCheck == "" || typeOfFit == "-------Select a Type of Fit----------") {
-        alert("empty-error");
+        
     } else {
         var fit = {
             "make": make,
