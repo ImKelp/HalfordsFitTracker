@@ -30,7 +30,7 @@ function  save() {
     var paid = document.getElementById('paid-selection').value;
     var carCheck = document.getElementById('carcheck-selection').value;
 
-    if (make == "" || model == "" || registration == "" || typeOfFit == "" || paid == "" || carCheck == "" || typeOfFit == "-------Select a Type of Fit----------") {
+    if (registration == "" || typeOfFit == "" || paid == "" || carCheck == "" || typeOfFit == "-------Select a Type of Fit----------") {
         
     } else {
         var fit = {
